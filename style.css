@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+@font-face {
+    font-family:'futura' ;
+    src: url('font/FuturaLT-Bold.woff')format('opentype');
+    font-weight: normal;
+}
+
+
+:root{
+    --cor0:#E67D3B;
+    --cor1:#3F2773;
+    --cor2:#066196;
+
+    --font-padrao: sans-serif, Helvetica;
+    --font-destaque:'futura';
+}
+header{
+    min-height: 150px;
+    padding-top: 5px;
+    background-color: white;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.319);
+}
+header  img{
+    display: block;
+    margin-top: 30px;
+    margin-left: 20px;
+    
+}
+nav {
+    display: inline;
+    float: right;
+    padding:  0px 30px 0px 0px;
+    margin: auto;
+    margin: -30px 1px 1px 1px;
+
+}
+nav > a {
+    color: var(--cor2);
+    font-size: 1.3em;
+    text-decoration: none;
+    font-family: var(--font-padrao);
+    padding:6px 30px 6px 30px;
+    
+
+}
+nav > a:hover{
+    text-decoration: underline;
+    color:rgba(1, 118, 251, 0.837);
+}
+a.externo::after {
+    content: '\00A0\260F';
+}
+body{
+    background-color: #003c818b;
+}
+
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 2px -2px 5px 1px rgba(0, 0, 0, 0.174);
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px;
+    
+}
+
+main  img{
+    align-items: center;
+    width: 900px;
+    display: block;
+    margin: auto;
+    padding: 5px;
+    border: rgba(0, 0, 0, 0.459) solid;
+    width: 50%;
+    
+}
+
+ h1{
+    font-family: var(--font-destaque);
+    text-indent: 30px;
+    padding-top: 10px;
+    color: var(--cor2);
+    font-weight: bold;
+    font-size: 2.3em;
+    text-shadow: 2px 3px 1px rgba(0, 0, 0, 0.653);
+}
+h2{
+    font-family: var(--font-destaque);
+    font-size: 1.5em;
+    text-indent: 10px;
+    color: var(--cor2);
+    background-image: linear-gradient(to right,#7494BA,transparent);
+    box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.467);
+    border: #7493ba6c solid 2px;
+    margin-bottom: 10px;
+    margin: 15px -9px 0px -9px;   
+}
+h3{
+    font-family: var(--font-destaque);
+    padding-top: 10px;
+    color: var(--cor2);
+    font-weight: bold;
+    padding: 10px;
+}
+
+main p{
+    font-family: var(--font-padrao);
+    text-align: left;
+    text-indent: 10px;
+    line-height: 2em;
+    padding: 10px;
+    font-weight: normal;
+}
+footer{
+    height: 40px;
+    display: inline;
+
+}
+.p-footer{
+    text-align: center;
+    padding: 8px;
+}
+
+.img-footer{
+    display: block;
+    padding: 10px 5px;
+    margin: 40px 0px 0px 140px;
+    padding-top: 5px;
+}
